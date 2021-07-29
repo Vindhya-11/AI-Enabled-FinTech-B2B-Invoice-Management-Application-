@@ -1,0 +1,196 @@
+.addModal, .editModal, .deleteModal {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.addContainer, .editContainer, .deleteContainer {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background: #2A3E4C 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.addContainer {
+    width: 1106px;
+    height: 509px;
+}
+
+.editContainer {
+    width: 543px;
+    height: 511px;
+}
+
+.deleteContainer {
+    width: 611px;
+    height: 342px;
+}
+
+
+/* Headings */
+
+.addHeading, .editHeading, .deleteHeading {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.addHeading p, .editHeading p, .deleteHeading p {
+    padding: 0;
+    margin: 0;
+    font: normal normal normal 28px/32px 'Ubuntu';
+    color: #FFFFFF;
+}
+
+.addModalCrossBtn, .editModalCrossBtn, .deleteModalCrossBtn {
+    cursor: pointer;
+}
+
+/* Forms */
+
+.addModalForm, .editModalForm {
+    border: 1px solid #1A262F;
+    height: 100%;
+    padding: 30px;
+
+    font: normal normal normal 20px/24px Ubuntu;
+    letter-spacing: 0.19px;
+    color: #97A1A9;
+}
+
+.addModalForm form, .editModalForm form {
+    height: 100%;
+}
+
+.addModalForm form label , .editModalForm form label {
+    margin-right: 20px;
+}
+
+.addModalForm textarea, .editModalForm textarea {
+    resize: none;
+    margin-top: 30px;
+}
+
+.addModalForm input[type="text"], .addModalForm textarea, .addModalForm input[type="date"], .editModalForm input[type="text"], .editModalForm textarea {
+    background: #283A46 0% 0% no-repeat padding-box;
+    border: 1px solid #356680;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: #FFFFFF;
+}
+
+.addModalForm input[type="text"], .addModalForm textarea, .addModalForm input[type="date"]  {
+    width: 300px;
+}
+
+.editModalForm input[type="text"], .editModalForm textarea  {
+    width: 20em;
+}
+
+
+.addModalForm form, .editModalForm .inp1, .editModalForm .inp2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.addModalForm input[type="date"]::-webkit-calendar-picker-indicator {
+    color: white;
+}
+
+.leftAddFormDiv, .rightAddFormDiv {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.addInp {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+
+/* Delete modal description */
+
+.deleteModalDesp {
+    border: 1px solid #1A262F;
+    height: 100%;
+    font: normal normal normal 20px/24px 'Ubuntu';
+    color: #C0C6CA;
+    padding: 30px;
+}
+
+.deleteModalDesp p {
+    padding: 0;
+    margin: 0;
+}
+
+/* Footer buttons */
+
+.addModalFnc, .editModalFnc, .deleteModalFnc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 30px;
+}
+
+.deleteModalFnc {
+    justify-content: flex-end;
+}
+
+
+.addModalFnc .cancelBtn, .editModalFnc .cancelBtn {
+    border: none;
+    outline: none;
+    background-color: transparent;
+
+    font: normal normal normal 20px/24px Ubuntu;
+    color: #14AFF1;
+}
+
+.addModalFnc .clearBtn,  .editModalFnc .resetBtn, .deleteModalFnc .cancelBtn{
+    margin-right: 20px;
+    padding: 10px 20px;
+    background-color: transparent;
+
+    border: 1px solid #14AFF1;
+    border-radius: 10px;
+
+    font: normal normal normal 20px/24px 'Ubuntu';
+    color: #FFFFFF;
+}
+
+.addModalFnc .addSaveBtn, .editModalFnc .editSaveBtn, .deleteModalFnc .ModalDeleteBtn {
+    border: none;
+    outline: none;
+
+    padding: 10px 20px;
+
+    background: #14AFF1 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+
+    font: normal normal normal 20px/24px 'Ubuntu';
+    color: #FFFFFF;
+}

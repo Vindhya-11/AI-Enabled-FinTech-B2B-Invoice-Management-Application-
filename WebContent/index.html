@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>ABC Products</title>
+<link rel="shortcut icon" href="./assets/images/Group 20399-cropped.png" />
+<link rel="stylesheet" href="./assets/css/style.css">
+<link rel="stylesheet" href="./assets/css/modal.css">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+	<div class="brand"><img src="./assets/images/Group 20399.svg" alt=""></div>
+		<div class="logo"><img src="./assets/images/logo.svg" alt=""></div>
+		<div class='heading'>Invoice List</div>
+		<div class="content">
+			<div class="tableFns">
+					<button class="addBtn functionbtn">
+					<img src="./assets/images/Path 18189.svg" alt=""><span>Add</span></button>
+					<button class="editBtn functionbtn" >
+					<img src="./assets/images/Path 18191.svg" alt=""><span>Edit</span></button>
+					<button class="deleteBtn functionbtn" >
+					<img src="./assets/images/Path 18189-1.svg" alt=""><span>Delete</span></button>
+					<input class="searchInput functionbtn" type="search" name="" id="" placeholder="Search By Invoice Number">
+			</div>
+			<div class="tableDiv">
+				<button class="paginationLeftBtn btn-disabled"><img src="./assets/images/arrow_back.svg" alt=""></button>
+				<button class="paginationRightBtn"><img src="./assets/images/arrow_forward.svg" alt=""></button>	
+				<table class="main-table">
+				</table>	
+			</div>
+		</div>
+
+	<div class="editModal hide">
+		<div class="editContainer">
+			<div class="editHeading">
+				<p>Edit Invoice</p>
+				<div class="editModalCrossBtn"><img src="./assets/images/baseline-close-24px.svg" alt=""></div>
+			</div>
+			<div class="editModalForm">
+				<form action="">
+					<div class="inp1">
+						<label for="invoiceInput">Invoice Amount</label>
+						<input type="text" name="" id="invoiceInput">	
+					</div>
+					<div class="inp2">
+						<label for="editNotes">Notes</label>
+						<textarea name="" id="editNotes" cols="30" rows="10"></textarea>
+					</div>
+				</form>				
+			</div>
+			<div class="editModalFnc">
+				<div>
+					<button class="cancelBtn">Cancel</button>
+				</div>
+				<div>
+					<button class="resetBtn">Reset</button>
+					<button class="editSaveBtn">Save</button>					
+				</div>
+			</div>	
+		</div>
+	</div>
+
+	<div class="addModal hide">
+		<div class="addContainer">
+			<div class="addHeading">
+				<p>Add Invoice</p>
+				<div class="addModalCrossBtn"><img src="./assets/images/baseline-close-24px.svg" alt=""></div>
+			</div>
+			<div class="addModalForm">
+				<form action="">
+					<div class="leftAddFormDiv">
+						<div class="addInp">
+							<label for="customerNameInp">Customer Name <span class="redColor">*</span></label>
+							<input type="text" name="" id="customerNameInp" required>	
+						</div>
+						<div class="addInp">
+							<label for="customerNumberInp">Customer No. <span class="redColor">*</span></label>
+							<input type="text" name="" id="customerNumberInp" required>	
+						</div>
+						<div class="addInp">
+							<label for="invoiceNoInp">Invoice No. <span class="redColor">*</span></label>
+							<input type="text" name="" id="invoiceNoInp" required>	
+						</div>
+						<div class="addInp">
+							<label for="invoiceAmountInp">Invoice Amount <span class="redColor">*</span></label>
+							<input type="text" name="" id="invoiceAmountInp" required>	
+						</div>						
+					</div>
+					<div class="rightAddFormDiv">
+						<div class="addInp">
+							<label for="dueDateInp">Due Date <span class="redColor">*</span></label>
+							<input type="date" name="" id="dueDateInp" placeholder="" required>	
+						</div>
+						<div class="addInp">
+							<label for="notesInp">Notes</label>
+							<textarea name="" id="notesInp" cols="30" rows="10"></textarea>	
+						</div>						
+					</div>
+				</form>				
+			</div>
+			<div class="addModalFnc">
+				<div>
+					<button class="cancelBtn">Cancel</button>
+				</div>
+				<div>
+					<button class="clearBtn">Clear</button>
+					<button class="addSaveBtn">Save</button>					
+				</div>
+			</div>	
+		</div>
+	</div>	
+
+	<div class="deleteModal hide">
+		<div class="deleteContainer">
+			<div class="deleteHeading">
+				<p>Delete record(s)?</p>
+				<div class="deleteModalCrossBtn"><img src="./assets/images/baseline-close-24px.svg" alt=""></div>
+			</div>
+			<div class="deleteModalDesp">	
+				<p>You'll lose your record(s) after this action. We can't recover them once you delete.</p>
+				<br>
+				<p>Are you sure you want to <span class="redColor">permanently delete</span> them?</p>		
+			</div>
+			<div class="deleteModalFnc">
+				<button class="cancelBtn">Cancel</button>
+				<button class="ModalDeleteBtn">Delete</button>					
+			</div>	
+		</div>
+	</div>
+
+	<div class="snackbar hide">
+		<img src="./assets/images/Path 18298.svg" alt="">
+		<p>Mandatory fields can't be empty</p>
+	</div>
+
+	<script type="text/javascript" src="./assets/data/data.json"></script>
+<script type="text/javascript" src="./assets/js/modal.js"></script>
+<script type="text/javascript" src="./assets/js/index.js"></script>
+</body>
+</html>
+
